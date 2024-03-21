@@ -8,5 +8,14 @@ namespace survival_rpg
 {
     internal class Player
     {
+        public void PlayerStats()
+        {
+            int health;
+            int hunger;
+            int thirst;
+            int tiredness;
+            int comfort;
+        }
     }
+
 }
