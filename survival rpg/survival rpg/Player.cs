@@ -16,6 +16,8 @@ namespace survival_rpg
             int tiredness;
             int comfort;
         }
+            public string Class { get; set; }
+            // hier komt per class info enzo zegmaar. met de health hunger thirst etc die hierboven staat.
     }
 
 }
