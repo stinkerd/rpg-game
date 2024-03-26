@@ -115,7 +115,31 @@ namespace survival_rpg
                     case "4":
                         Console.Clear();
 
-                        running = false;
+                        Console.WriteLine("Weet je het zeker?? Je voortgang word NIET opgeslagen.");
+                        Console.WriteLine("1) Ik weet het zeker");
+                        Console.WriteLine("2) Laat maar");
+
+                        string quit = Console.ReadLine();
+                        Console.Clear();
+                        switch (quit)
+                        {
+                            case "1":
+                                Console.Clear();
+
+                                Console.WriteLine("Typ 'exit' om het spel te beëindigen:");
+                                string quit2 = Console.ReadLine();
+                                switch (quit2)
+                                {
+                                    case "exit":
+                                        Console.Clear();
+
+                                        running = false;
+                                        break;
+
+                                }
+                                Console.Clear();
+                                continue;
+                        }
                         break;
 
                     case "69":
@@ -128,7 +152,6 @@ namespace survival_rpg
                         Console.Clear();
 
                         Console.WriteLine("Ongeldige keuze!");
-                        Console.WriteLine();
                         break;
                 }
             }
